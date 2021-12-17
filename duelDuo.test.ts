@@ -36,7 +36,7 @@ describe('Duel duo tests', () => {
         await driver.findElement(By.className('bot-btn')).click();
         await driver.sleep(3000);
     
-        const div = await driver.findElement(By.id('player-id'))
+        const div = await driver.findElement(By.id('player-duo'))
         const displayed = await div.isDisplayed()
         expect(displayed).toBe(true);
     })
