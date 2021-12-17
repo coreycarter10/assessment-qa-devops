@@ -19,7 +19,7 @@ app.use(express.json())
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
     rollbar.log('Hello world!');
-    rollbar.info('HTML file successfully loaded');
+    rollbar.info('HTML file loaded');
     rollbar.warning('Connection error');
     rollbar.error('Unexpected conditon happened here');
     rollbar.debug('Home page was rendered here');
